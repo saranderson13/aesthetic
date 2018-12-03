@@ -1,0 +1,386 @@
+// DEFAULT COLORS
+brightest-white { color: #ffffff; }
+peach-blush { color: #fce7d7; }
+salmon { color: #f5c4a7; }
+snow-shadow { color: #dbdfe3; }
+hazy-days { color: #a6a4ad; }
+storm-clouds { color: #6f728b; }
+night-sky { color: #363647; }
+            
+/*Force permalink & tag Link Colors for photos & photosets */
+boss-bitch  { 
+    color: #dbdfe3;
+    transition: .25s all ease-in-out;
+    -moz-transition: .25s all ease-in-out;
+    -webkit-transition: .25s all ease-in-out;
+}
+boss-bitch:hover { color: #f5c4a7; }
+            
+            
+body {
+    background-color: #ffffff;
+    font-family: 'quicksand'; color: #363647; font-size: 11px;
+}
+
+a:link, a:active, a:visited {
+    color: #6f728b;
+    text-decoration: none;
+    transition: .25s all ease-in-out;
+    -moz-transition: .25s all ease-in-out;
+    -webkit-transition: .25s all ease-in-out;
+}
+
+a:hover {
+    color: #a6a4ad;
+}
+
+header {
+    width: 100%; height: 40px;
+    position:fixed; top: 0px; left: 0px;
+    background-color: #ffffff; background-attachment: fixed;
+    border-bottom: #ffffff solid 3px;
+    box-shadow: #ffffff 0px 20px 15px;
+}
+
+footer {
+    width: 100%; height: 30px;
+    position: fixed; bottom: 0px; left: 0px;
+    background-color: #ffffff; background-attachment: fixed;
+    border-top: #ffffff solid 3px;
+    box-shadow: #ffffff 0px -15px 15px;
+}
+
+/* SIDE TABLE */
+aside {
+    width: 250px; height: 100%;
+    float: left; position: fixed; top: 0px; left: 0px;
+    background-color: #ffffff; background-attachment: fixed;
+    background-image: url(http://oi66.tinypic.com/wunx5d.jpg);
+    background-repeat: repeat-y;
+    border-right: 1px solid #f5c4a7;
+}
+
+.blog-title{
+    width: 190px; height: 53px;
+    position: absolute; top: 40px; left: 30px;
+    border-bottom: 3px double #f5c4a7;
+    cursor: default;
+}
+
+.title-sans-serif {
+    font-family: 'quicksand'; font-size: 33px;
+    color: #6f728b;
+    float: right; position: relative; top: 0px; left: 0px;
+}
+
+.title-script {
+    font-family: 'sacramento'; font-size: 37px;
+    color: #a6a4ad;
+    float: left; position: relative; top: -27px;
+}
+
+.request-status {
+    width: 150px;
+    position: absolute; top: 130px; left: 50px;
+    text-align: center;
+    font-size: 10px; color: #a6a4ad;
+}
+
+#event-end {
+    width: 250px; text-align: center;
+    position: absolute; top: 315px; left: 0px;
+    font-size: 12px;
+}
+
+.current-event {
+    width: 180px;
+    position: absolute; top: 250px; left: 28px;
+    padding: 5px;
+    text-align: center;
+    font-size: 10px; color: #a6a4ad;
+    border: 1px solid #f5c4a7;
+}
+
+
+
+status {
+    font-family: 'sacramento'; font-size: 25px;
+    padding-top: 2px;
+    display: block;
+}
+
+event {
+    display: block; padding-top: 2px;
+    font-size: 13px;
+}
+
+aside-small {
+    font-size: 9px; padding-top: 2px;
+}
+
+nav {
+    width: 150px; 
+    position: absolute; top: 450px; left: 50px;
+}
+
+.linkbox {
+    width: 132px; height: 13px;
+    font-size: 8px; text-transform: uppercase;
+    letter-spacing: 1px; word-spacing: 2px;
+    text-align: right; margin: 3px 0px;
+    padding: 3px 3px 0px 0px;
+    background-color: #ffffff;
+    border-left: 16px solid #dbdfe3;
+    border-top-left-radius: 8px; 
+    border-bottom-left-radius: 8px;
+    transition: .25s all ease-in-out;
+    -moz-transition: .25s all ease-in-out;
+    -webkit-transition: .25s all ease-in-out;
+}
+
+.linkbox:hover {
+    border-left: 20px solid #dbdfe3;
+}
+
+/* BLOG BODY AND POSTS */
+
+section {
+    {block:IndexPage} width: 710px; {/block:IndexPage}
+    {block:PermalinkPage} width: 500px; {/block:PermalinkPage}
+    position: absolute; left: 350px; top: 65px;
+    /*padding-bottom: 10px;*/
+}
+
+.post-title {
+    width: 497px;
+    text-align: right; padding-right: 3px;
+    font-size: 15px; text-transform: lowercase;
+    letter-spacing: 2px; word-spacing: 4px;
+}
+
+.post-text /* ALSO USED FOR ANSWER POSTS AS BASIC BOX */ {
+    width: 510px; padding-bottom: 10px;
+    text-align: left; font-size: 10px;
+    letter-spacing: 1px; word-spacing: 2px;
+}
+
+.question-box {
+    width: 490px; padding: 10px 5px; 
+    background-color: #fce7d7;
+    text-align: justify;
+}
+
+.q-portrait img { max-width: 16px; border-radius: 50%; overflow: hidden; }
+.q-username { 
+    height: 12px; padding: 3px 3px;
+    vertical-align: 30%;
+    text-transform: uppercase;
+}
+
+.question { padding-left: 21px; }
+.answer-box { padding-left: 10px; }
+
+.post-photo {
+    {block:IndexPage} width: 710px; {/block:IndexPage}
+    {block:PermalinkPage} width: 500px; {/block:PermalinkPage}
+    display: inline-block;
+}
+
+.post-photoset {
+    {block:IndexPage} width: 710px; {/block:IndexPage}
+    {block:PermalinkPage} width: 500px; {/block:PermalinkPage}
+    display: inline-block;
+}
+
+.tag-box-photo {
+    width: 200px;
+    float: right;
+}
+
+
+
+/* POST FOOTER FORMATTING */
+.post-footer {
+    width: 500px; height: 20px;
+    margin-bottom: 50px; padding: 5px 0px 3px 0px;
+    border-bottom: 1px solid #dbdfe3;
+}
+
+.index-button {
+    margin-right: 4px; margin-left:3px;
+    float: left;
+}
+
+.index-notes {
+    float: right; margin-top: 3px; padding-right: 3px;
+    font-family: 'quicksand'; font-size: 10px; 
+    text-transform: uppercase;
+}
+
+.index-notes img {
+    border-radius: 8px; overflow: hidden;
+}
+
+.index-tags, .permalink-tag {
+    font-size: 9px; text-transform: uppercase;
+    letter-spacing: 1px; 
+    padding: 2px;
+}
+
+
+
+
+
+
+/* PAGINATION */
+.page-nav {
+    position: fixed; top: 55px; right: 0px;
+    width: 175px; margin-right: 18px;
+    font-size: 10px; color: #a6a4ad;
+    text-align: center; text-transform: uppercase;
+    letter-spacing: 2px; word-spacing: 4px;
+}
+
+.pagination {
+    {block:IndexPage}
+    width: 175px; height: 17px;
+    position: fixed; top: 74px; right: 0px;
+    margin-right: 18px; 
+    {/block:IndexPage}
+    {block:PermalinkPage}
+    width: 150px; height: 17px;
+    position: fixed; top: 74px; right: 0px;
+    margin-right: 32px; 
+    {/block:PermalinkPage}
+    padding-bottom: 2px;
+    border-bottom: 3px double #f5c4a7;
+    text-align: center;
+}
+
+.page-box {
+    {block:IndexPage}
+    width: 169px; 
+    {/block:IndexPage}
+    {block:PermalinkPage}
+    width: 144;
+    {/block:PermalinkPage}
+    height: 17px;
+    padding: 0px 3px;
+    font-size: 9px;
+}
+
+.day-page-box {
+    width: 135px; height: 17px;
+    position: fixed; top: 90px; right: 0px;
+    margin-right: 35px;
+    border-bottom: 3px double #f5c4a7;
+    padding: 2px 3px;
+    font-size: 9px;
+}
+
+.prev-next-box {
+    width: 55px; height: 10px;
+    border-radius: 7px;
+    position: absolute; padding: 2px 0px;
+    background-color: #dbdfe3;
+    box-shadow: #a6a4ad 1px 1px 2px;
+    font-size: 9px; text-transform: uppercase;
+    text-align: center;
+    transition: .25s all ease-in-out;
+    -moz-transition: .25s all ease-in-out;
+    -webkit-transition: .25s all ease-in-out;
+}
+
+.prev-next-box:hover {
+    box-shadow: none;
+}
+
+/* PERMALINK PAGE FORMATTING */
+.permalink-info {
+    width: 363px; height: 441px;
+    position: fixed; top: 120px; left: 900px;
+    border-bottom: 3px double #f5c4a7;
+    background-color: #ffffff;
+    overflow: auto;
+}
+
+.permalink-top-block {
+    width: 335px; padding: 5px;
+    background-color: #fce7d7;
+    border-left: 3px double #f5c4a7;
+}
+
+.permalink-date {
+    display: inline-block;
+    padding-top: 3px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.reblogged {
+    text-align: right;
+    font-size: 9px; text-transform: uppercase;
+    display: inline-block;
+}
+
+.reblogged-text {
+    height: 12px; padding: 3px 3px;
+    vertical-align: 30%;
+}
+
+.notes-box {
+    width: 330px;
+    overflow: auto;
+}
+
+.notes {
+    padding-left: 15px; padding-bottom: 30px;
+}
+
+.notes blockquote { margin: 5px 15px; }
+.notes blockquote::before { content: "•"; }
+
+.reblogged img { border-radius: 50%; overflow: hidden; }
+.notes-box img { border-radius: 50%; overflow: hidden; }
+
+.permalink-caption {
+    width: 335px;
+    padding: 5px 5px 10px 5px;
+    background-color: #fce7d7;
+    border-top: 1px solid #f5c4a7;
+    border-left: 3px double #f5c4a7;
+}
+
+.permalink-caption p {
+    margin: 5px 0px;
+}
+
+.permalink-caption blockquote {
+    border-bottom: 1px solid #6f728b;
+    margin: 10px 15px;
+}
+
+.permalink-caption .tumblr_blog {
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.tag-box {
+    width: 348px; text-align: center;
+    position: fixed; left: 900px; top: 545px;
+}
+
+.tag-format {
+    text-transform: uppercase;
+    font-size: 9px;
+    padding: 0px 3px;
+}
+
+.permalink-vanish-box {
+    width: 348px; height: 20px;
+    position: fixed; left: 900px; top: 541px;
+    background-color: #ffffff;
+    box-shadow: #ffffff 0px -10px 15px;
+}
+            
+                  
